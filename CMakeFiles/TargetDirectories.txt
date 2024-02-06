@@ -1,0 +1,3 @@
+/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles/WalnutApp_exec.dir
+/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles/edit_cache.dir
+/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles/rebuild_cache.dir
