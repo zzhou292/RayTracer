@@ -22,12 +22,17 @@ file(GLOB STB_SOURCES ./Walnut/vendor/stb_image/*.h)
 
 # Walnut
 include_directories(./Walnut/Walnut/src)
-file(GLOB WALNUT_SOURCES ./Walnut/Walnut/src/Walnut/*.cpp ./Walnut/Walnut/src/Walnut/*.h)
+include_directories(./Walnut/Walnut/src/Walnut)
+include_directories(./Walnut/Walnut/src/Walnut/Input)
+file(GLOB WALNUT_SOURCES ./Walnut/Walnut/src/Walnut/*.cpp ./Walnut/Walnut/src/Walnut/*.h ./Walnut/Walnut/src/Walnut/Input/*.h ./Walnut/Walnut/src/Walnut/Input/*.cpp)
 
 set(SOURCE_FILES
     WalnutApp/src/WalnutApp.cpp
     WalnutApp/src/Renderer.h
     WalnutApp/src/Renderer.cpp
+    WalnutApp/src/Camera.h
+    WalnutApp/src/Camera.cpp
+    WalnutApp/src/Ray.h
     ${IMGUI_SOURCES}
     ${WALNUT_SOURCES}
     ${STB_SOURCES}

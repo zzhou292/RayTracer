@@ -694,8 +694,7 @@ CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.o: \
   /Users/jasonzhou/VulkanSDK/1.3.275.0/macOS/include/vk_video/vulkan_video_codec_h264std_decode.h \
   /Users/jasonzhou/VulkanSDK/1.3.275.0/macOS/include/vk_video/vulkan_video_codec_h265std_decode.h \
   /Users/jasonzhou/Desktop/STUDY/RayTracer/./Walnut/Walnut/src/Walnut/EntryPoint.h \
-  /Users/jasonzhou/Desktop/STUDY/RayTracer/WalnutApp/src/Renderer.h \
-  /Users/jasonzhou/Desktop/STUDY/RayTracer/./Walnut/Walnut/src/Walnut/Image.h \
+  /Users/jasonzhou/Desktop/STUDY/RayTracer/WalnutApp/src/Camera.h \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/detail/_fixes.hpp \
   /opt/homebrew/include/glm/detail/setup.hpp \
@@ -846,6 +845,9 @@ CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.o: \
   /opt/homebrew/include/glm/vector_relational.hpp \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/detail/func_integer.inl \
+  /Users/jasonzhou/Desktop/STUDY/RayTracer/WalnutApp/src/Renderer.h \
+  /Users/jasonzhou/Desktop/STUDY/RayTracer/WalnutApp/src/Ray.h \
+  /Users/jasonzhou/Desktop/STUDY/RayTracer/./Walnut/Walnut/src/Walnut/Image.h \
   /Users/jasonzhou/Desktop/STUDY/RayTracer/./Walnut/Walnut/src/Walnut/Timer.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \

@@ -177,6 +177,30 @@ Walnut/Walnut/src/Walnut/Image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.s
 .PHONY : Walnut/Walnut/src/Walnut/Image.cpp.s
 
+Walnut/Walnut/src/Walnut/Input/Input.o: Walnut/Walnut/src/Walnut/Input/Input.cpp.o
+.PHONY : Walnut/Walnut/src/Walnut/Input/Input.o
+
+# target to build an object file
+Walnut/Walnut/src/Walnut/Input/Input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Input/Input.cpp.o
+.PHONY : Walnut/Walnut/src/Walnut/Input/Input.cpp.o
+
+Walnut/Walnut/src/Walnut/Input/Input.i: Walnut/Walnut/src/Walnut/Input/Input.cpp.i
+.PHONY : Walnut/Walnut/src/Walnut/Input/Input.i
+
+# target to preprocess a source file
+Walnut/Walnut/src/Walnut/Input/Input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Input/Input.cpp.i
+.PHONY : Walnut/Walnut/src/Walnut/Input/Input.cpp.i
+
+Walnut/Walnut/src/Walnut/Input/Input.s: Walnut/Walnut/src/Walnut/Input/Input.cpp.s
+.PHONY : Walnut/Walnut/src/Walnut/Input/Input.s
+
+# target to generate assembly for a file
+Walnut/Walnut/src/Walnut/Input/Input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Input/Input.cpp.s
+.PHONY : Walnut/Walnut/src/Walnut/Input/Input.cpp.s
+
 Walnut/Walnut/src/Walnut/Random.o: Walnut/Walnut/src/Walnut/Random.cpp.o
 .PHONY : Walnut/Walnut/src/Walnut/Random.o
 
@@ -369,6 +393,30 @@ Walnut/vendor/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.s
 .PHONY : Walnut/vendor/imgui/imgui_widgets.cpp.s
 
+WalnutApp/src/Camera.o: WalnutApp/src/Camera.cpp.o
+.PHONY : WalnutApp/src/Camera.o
+
+# target to build an object file
+WalnutApp/src/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Camera.cpp.o
+.PHONY : WalnutApp/src/Camera.cpp.o
+
+WalnutApp/src/Camera.i: WalnutApp/src/Camera.cpp.i
+.PHONY : WalnutApp/src/Camera.i
+
+# target to preprocess a source file
+WalnutApp/src/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Camera.cpp.i
+.PHONY : WalnutApp/src/Camera.cpp.i
+
+WalnutApp/src/Camera.s: WalnutApp/src/Camera.cpp.s
+.PHONY : WalnutApp/src/Camera.s
+
+# target to generate assembly for a file
+WalnutApp/src/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Camera.cpp.s
+.PHONY : WalnutApp/src/Camera.cpp.s
+
 WalnutApp/src/Renderer.o: WalnutApp/src/Renderer.cpp.o
 .PHONY : WalnutApp/src/Renderer.o
 
@@ -432,6 +480,9 @@ help:
 	@echo "... Walnut/Walnut/src/Walnut/Image.o"
 	@echo "... Walnut/Walnut/src/Walnut/Image.i"
 	@echo "... Walnut/Walnut/src/Walnut/Image.s"
+	@echo "... Walnut/Walnut/src/Walnut/Input/Input.o"
+	@echo "... Walnut/Walnut/src/Walnut/Input/Input.i"
+	@echo "... Walnut/Walnut/src/Walnut/Input/Input.s"
 	@echo "... Walnut/Walnut/src/Walnut/Random.o"
 	@echo "... Walnut/Walnut/src/Walnut/Random.i"
 	@echo "... Walnut/Walnut/src/Walnut/Random.s"
@@ -456,6 +507,9 @@ help:
 	@echo "... Walnut/vendor/imgui/imgui_widgets.o"
 	@echo "... Walnut/vendor/imgui/imgui_widgets.i"
 	@echo "... Walnut/vendor/imgui/imgui_widgets.s"
+	@echo "... WalnutApp/src/Camera.o"
+	@echo "... WalnutApp/src/Camera.i"
+	@echo "... WalnutApp/src/Camera.s"
 	@echo "... WalnutApp/src/Renderer.o"
 	@echo "... WalnutApp/src/Renderer.i"
 	@echo "... WalnutApp/src/Renderer.s"

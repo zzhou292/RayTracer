@@ -1,7 +1,7 @@
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.o: \
   /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/Walnut/src/Walnut/Application.cpp \
-  /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/Walnut/src/Walnut/Application.h \
-  /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/Walnut/src/Walnut/Layer.h \
+  /Users/jasonzhou/Desktop/STUDY/RayTracer/./Walnut/Walnut/src/Walnut/Application.h \
+  /Users/jasonzhou/Desktop/STUDY/RayTracer/./Walnut/Walnut/src/Walnut/Layer.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -900,4 +900,4 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/Walnut/src/Walnut/ImGui/Roboto-Regular.embed
+  /Users/jasonzhou/Desktop/STUDY/RayTracer/./Walnut/Walnut/src/Walnut/ImGui/Roboto-Regular.embed

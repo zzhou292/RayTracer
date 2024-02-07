@@ -1,6 +1,6 @@
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.o: \
   /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/Walnut/src/Walnut/Random.cpp \
-  /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/Walnut/src/Walnut/Random.h \
+  /Users/jasonzhou/Desktop/STUDY/RayTracer/./Walnut/Walnut/src/Walnut/Random.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/random \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \
