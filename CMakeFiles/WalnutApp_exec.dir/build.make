@@ -83,10 +83,24 @@ CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jasonzhou/Desktop/STUDY/RayTracer/WalnutApp/src/WalnutApp.cpp -o CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.s
 
+CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
+CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o: WalnutApp/src/Renderer.cpp
+CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/WalnutApp/src/Renderer.cpp
+
+CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jasonzhou/Desktop/STUDY/RayTracer/WalnutApp/src/Renderer.cpp > CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.i
+
+CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jasonzhou/Desktop/STUDY/RayTracer/WalnutApp/src/Renderer.cpp -o CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.s
+
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.o: Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp
 
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.s
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.o: Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp
 
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.o: Walnut/vendor/imgui/imgui.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/vendor/imgui/imgui.cpp
 
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.s: cmake_force
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_demo.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_demo.cpp.o: Walnut/vendor/imgui/imgui_demo.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_demo.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_demo.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_demo.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_demo.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_demo.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/vendor/imgui/imgui_demo.cpp
 
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_demo.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_demo.cpp.s: cmake_force
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.o: Walnut/vendor/imgui/imgui_draw.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/vendor/imgui/imgui_draw.cpp
 
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.s: cmake_force
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o: Walnut/vendor/imgui/imgui_tables.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/vendor/imgui/imgui_tables.cpp
 
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.s: cmake_forc
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o: Walnut/vendor/imgui/imgui_widgets.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/vendor/imgui/imgui_widgets.cpp
 
 CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.s: cmake_for
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.o: Walnut/Walnut/src/Walnut/Application.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/Walnut/src/Walnut/Application.cpp
 
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Application.cpp.s: cmake_
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.o: Walnut/Walnut/src/Walnut/Image.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/Walnut/src/Walnut/Image.cpp
 
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp.s: cmake_force
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.o: CMakeFiles/WalnutApp_exec.dir/flags.make
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.o: Walnut/Walnut/src/Walnut/Random.cpp
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.o: CMakeFiles/WalnutApp_exec.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.o -MF CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.o.d -o CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.o -c /Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/Walnut/src/Walnut/Random.cpp
 
 CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.i: cmake_force
@@ -226,6 +240,7 @@ CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.s: cmake_force
 # Object files for target WalnutApp_exec
 WalnutApp_exec_OBJECTS = \
 "CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.o" \
+"CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o" \
 "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.o" \
 "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.o" \
 "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.o" \
@@ -241,6 +256,7 @@ WalnutApp_exec_OBJECTS = \
 WalnutApp_exec_EXTERNAL_OBJECTS =
 
 WalnutApp_exec: CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.o
+WalnutApp_exec: CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o
 WalnutApp_exec: CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp.o
 WalnutApp_exec: CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp.o
 WalnutApp_exec: CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui.cpp.o
@@ -253,7 +269,7 @@ WalnutApp_exec: CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Image.cpp
 WalnutApp_exec: CMakeFiles/WalnutApp_exec.dir/Walnut/Walnut/src/Walnut/Random.cpp.o
 WalnutApp_exec: CMakeFiles/WalnutApp_exec.dir/build.make
 WalnutApp_exec: CMakeFiles/WalnutApp_exec.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable WalnutApp_exec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable WalnutApp_exec"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/WalnutApp_exec.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

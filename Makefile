@@ -369,6 +369,30 @@ Walnut/vendor/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.s
 .PHONY : Walnut/vendor/imgui/imgui_widgets.cpp.s
 
+WalnutApp/src/Renderer.o: WalnutApp/src/Renderer.cpp.o
+.PHONY : WalnutApp/src/Renderer.o
+
+# target to build an object file
+WalnutApp/src/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o
+.PHONY : WalnutApp/src/Renderer.cpp.o
+
+WalnutApp/src/Renderer.i: WalnutApp/src/Renderer.cpp.i
+.PHONY : WalnutApp/src/Renderer.i
+
+# target to preprocess a source file
+WalnutApp/src/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.i
+.PHONY : WalnutApp/src/Renderer.cpp.i
+
+WalnutApp/src/Renderer.s: WalnutApp/src/Renderer.cpp.s
+.PHONY : WalnutApp/src/Renderer.s
+
+# target to generate assembly for a file
+WalnutApp/src/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.s
+.PHONY : WalnutApp/src/Renderer.cpp.s
+
 WalnutApp/src/WalnutApp.o: WalnutApp/src/WalnutApp.cpp.o
 .PHONY : WalnutApp/src/WalnutApp.o
 
@@ -432,6 +456,9 @@ help:
 	@echo "... Walnut/vendor/imgui/imgui_widgets.o"
 	@echo "... Walnut/vendor/imgui/imgui_widgets.i"
 	@echo "... Walnut/vendor/imgui/imgui_widgets.s"
+	@echo "... WalnutApp/src/Renderer.o"
+	@echo "... WalnutApp/src/Renderer.i"
+	@echo "... WalnutApp/src/Renderer.s"
 	@echo "... WalnutApp/src/WalnutApp.o"
 	@echo "... WalnutApp/src/WalnutApp.i"
 	@echo "... WalnutApp/src/WalnutApp.s"

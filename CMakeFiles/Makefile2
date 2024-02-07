@@ -81,12 +81,12 @@ clean: CMakeFiles/WalnutApp_exec.dir/clean
 CMakeFiles/WalnutApp_exec.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/WalnutApp_exec.dir/build.make CMakeFiles/WalnutApp_exec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target WalnutApp_exec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target WalnutApp_exec"
 .PHONY : CMakeFiles/WalnutApp_exec.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/WalnutApp_exec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/WalnutApp_exec.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jasonzhou/Desktop/STUDY/RayTracer/CMakeFiles 0
 .PHONY : CMakeFiles/WalnutApp_exec.dir/rule

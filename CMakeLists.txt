@@ -26,6 +26,8 @@ file(GLOB WALNUT_SOURCES ./Walnut/Walnut/src/Walnut/*.cpp ./Walnut/Walnut/src/Wa
 
 set(SOURCE_FILES
     WalnutApp/src/WalnutApp.cpp
+    WalnutApp/src/Renderer.h
+    WalnutApp/src/Renderer.cpp
     ${IMGUI_SOURCES}
     ${WALNUT_SOURCES}
     ${STB_SOURCES}

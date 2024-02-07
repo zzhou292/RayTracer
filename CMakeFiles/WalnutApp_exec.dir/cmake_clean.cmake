@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o.d"
   "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o"
   "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o.d"
+  "CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o"
+  "CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o.d"
   "CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.o"
   "CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.o.d"
   "WalnutApp_exec"

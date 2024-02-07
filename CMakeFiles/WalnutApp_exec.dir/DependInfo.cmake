@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/vendor/imgui/imgui_draw.cpp" "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.o" "gcc" "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_draw.cpp.o.d"
   "/Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/vendor/imgui/imgui_tables.cpp" "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o" "gcc" "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_tables.cpp.o.d"
   "/Users/jasonzhou/Desktop/STUDY/RayTracer/Walnut/vendor/imgui/imgui_widgets.cpp" "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o" "gcc" "CMakeFiles/WalnutApp_exec.dir/Walnut/vendor/imgui/imgui_widgets.cpp.o.d"
+  "/Users/jasonzhou/Desktop/STUDY/RayTracer/WalnutApp/src/Renderer.cpp" "CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o" "gcc" "CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o.d"
   "/Users/jasonzhou/Desktop/STUDY/RayTracer/WalnutApp/src/WalnutApp.cpp" "CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.o" "gcc" "CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.o.d"
   )
 
