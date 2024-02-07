@@ -33,6 +33,7 @@ set(SOURCE_FILES
     WalnutApp/src/Camera.h
     WalnutApp/src/Camera.cpp
     WalnutApp/src/Ray.h
+    WalnutApp/src/Scene.h
     ${IMGUI_SOURCES}
     ${WALNUT_SOURCES}
     ${STB_SOURCES}

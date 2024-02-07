@@ -3,14 +3,22 @@
 
 #include "Camera.h"
 #include "Renderer.h"
+#include "Scene.h"
 #include "Walnut/Image.h"
 #include "Walnut/Timer.h"
+
+#include <glm/gtc/type_ptr.hpp>
 
 using namespace Walnut;
 
 class ExampleLayer : public Walnut::Layer {
 public:
-  ExampleLayer() : m_Camera(45.0f, 0.1f, 100.0f) {}
+  ExampleLayer() : m_Camera(45.0f, 0.1f, 100.0f) {
+    m_Scene.Spheres.push_back(
+        {glm::vec3(0.0f, 0.0f, 0.0f), 0.5f, glm::vec3(1.0f, 0.0f, 1.0f)});
+    m_Scene.Spheres.push_back(
+        {glm::vec3(0.0f, 0.0f, -5.0f), 1.5f, glm::vec3(0.2f, 0.3f, 1.0f)});
+  }
 
   virtual void OnUpdate(float ts) override { m_Camera.OnUpdate(ts); }
 
@@ -20,6 +28,22 @@ public:
     if (ImGui::Button("Render")) {
       Render();
     };
+    ImGui::End();
+
+    ImGui::Begin("Scene");
+    for (size_t i = 0; i < m_Scene.Spheres.size(); i++) {
+
+      ImGui::PushID(i);
+      ImGui::Text("Sphere %d", i);
+      ImGui::DragFloat3("Position %d",
+                        glm::value_ptr(m_Scene.Spheres[i].Position), 0.1f);
+      ImGui::DragFloat("Radius %d", &m_Scene.Spheres[i].Radius, 0.1f);
+      ImGui::ColorEdit3("Albedo %d", glm::value_ptr(m_Scene.Spheres[i].Albedo),
+                        0.1f);
+
+      ImGui::Separator();
+      ImGui::PopID();
+    }
     ImGui::End();
 
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
@@ -45,7 +69,7 @@ public:
 
     m_Renderer.OnResize(m_ViewportWidth, m_ViewportHeight);
     m_Camera.OnResize(m_ViewportWidth, m_ViewportHeight);
-    m_Renderer.Render(m_Camera);
+    m_Renderer.Render(m_Scene, m_Camera);
 
     m_LastRenderTime = timer.ElapsedMillis();
   }
@@ -53,6 +77,7 @@ public:
 private:
   Renderer m_Renderer;
   Camera m_Camera;
+  Scene m_Scene;
   uint32_t m_ViewportWidth = 0;
   uint32_t m_ViewportHeight = 0;
 

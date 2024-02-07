@@ -33,7 +33,7 @@ void Renderer::OnResize(uint32_t width, uint32_t height) {
   m_ImageData = new uint32_t[width * height];
 }
 
-void Renderer::Render(const Camera &camera) {
+void Renderer::Render(const Scene &scene, const Camera &camera) {
 
   Ray ray;
   ray.origin = camera.GetPosition();
@@ -44,7 +44,7 @@ void Renderer::Render(const Camera &camera) {
       ray.direction =
           camera.GetRayDirections()[x + y * m_FinalImage->GetWidth()];
 
-      glm::vec4 color = TraceRay(ray);
+      glm::vec4 color = TraceRay(scene, ray);
       color = glm::clamp(color, glm::vec4(0.0f), glm::vec4(1.0f));
       m_ImageData[x + y * m_FinalImage->GetWidth()] =
           Utils::ConvertToRGBA(color);
@@ -54,46 +54,53 @@ void Renderer::Render(const Camera &camera) {
   m_FinalImage->SetData(m_ImageData);
 }
 
-glm::vec4 Renderer::TraceRay(const Ray &ray) {
+glm::vec4 Renderer::TraceRay(const Scene &scene, const Ray &ray) {
 
-  float radius = 0.5f;
-  // rayDirection = glm::normalize(rayDirection);
-
-  // (bx^2 + by^2)*t^2 + (2(axbx+ayby))t + (ax^2 + ay^2 - r^2) = 0
-  // where a = rayOrigin, b = rayDirection, r = radius, t=hit distance
-
-  float a = glm::dot(ray.direction, ray.direction);
-  float b = 2.0f * glm::dot(ray.origin, ray.direction);
-  float c = glm::dot(ray.origin, ray.origin) - radius * radius;
-
-  float discriminant = b * b - 4.0f * a * c;
-  if (discriminant < 0) {
+  if (scene.Spheres.size() == 0)
     return glm::vec4(0, 0, 0, 1);
+
+  const Sphere *closestSphere = nullptr;
+  float hitDistance = FLT_MAX;
+  for (const Sphere &sphere : scene.Spheres) {
+
+    glm::vec3 origin = ray.origin - sphere.Position;
+
+    // rayDirection = glm::normalize(rayDirection);
+
+    // (bx^2 + by^2)*t^2 + (2(axbx+ayby))t + (ax^2 + ay^2 - r^2) = 0
+    // where a = rayOrigin, b = rayDirection, r = radius, t=hit distance
+
+    float a = glm::dot(ray.direction, ray.direction);
+    float b = 2.0f * glm::dot(origin, ray.direction);
+    float c = glm::dot(origin, origin) - sphere.Radius * sphere.Radius;
+
+    float discriminant = b * b - 4.0f * a * c;
+    if (discriminant < 0.0f) {
+      continue;
+    }
+
+    float closestT = (-b - glm::sqrt(discriminant)) / (2.0f * a);
+    // float t0 = (-b + glm::sqrt(discriminant)) / (2.0f * a);
+
+    if (closestT < hitDistance) {
+      hitDistance = closestT;
+      closestSphere = &sphere;
+    }
   }
 
-  float closestT = (-b - glm::sqrt(discriminant)) / (2.0f * a);
-  float t0 = (-b + glm::sqrt(discriminant)) / (2.0f * a);
+  if (closestSphere == nullptr)
+    return glm::vec4(0, 0, 0, 1);
 
-  glm::vec3 hitPoint = ray.origin + ray.direction * closestT;
+  glm::vec3 origin = ray.origin - closestSphere->Position;
+  glm::vec3 hitPoint = origin + ray.direction * hitDistance;
   glm::vec3 normal = glm::normalize(hitPoint);
 
   glm::vec3 lightDir = glm::normalize(glm::vec3(-1, -1, -1));
 
   float d = glm::max(glm::dot(normal, -lightDir), 0.0f);
 
-  auto now = std::chrono::high_resolution_clock::now();
-  // Convert time to seconds
-  auto timeInMiliSeconds =
-      std::chrono::duration_cast<std::chrono::milliseconds>(
-          now.time_since_epoch())
-          .count();
-
-  // Calculate sine and cosine based on time
-  float sineValue = std::sin(timeInMiliSeconds / 1000.0f);
-  float cosineValue = std::cos(timeInMiliSeconds / 1000.0f);
-
-  glm::vec3 sphereColor(sineValue, cosineValue, 0.8);
+  glm::vec3 sphereColor = closestSphere->Albedo;
   sphereColor *= d;
 
-  return glm::vec4(sphereColor, 1);
+  return glm::vec4(sphereColor, 1.0f);
 }
