@@ -38,6 +38,14 @@ public:
       sphere.MaterialIndex = 1;
       m_Scene.Spheres.push_back(sphere);
     }
+
+    {
+      Sphere sphere;
+      sphere.Position = {0.2f, 0.0f, 4.0f};
+      sphere.Radius = 0.8f;
+      sphere.MaterialIndex = 0;
+      m_Scene.Spheres.push_back(sphere);
+    }
   }
 
   virtual void OnUpdate(float ts) override {
@@ -75,6 +83,7 @@ public:
 
     for (size_t i = 0; i < m_Scene.Materials.size(); i++) {
       ImGui::PushID(i);
+      ImGui::Text("Material %d", i);
       ImGui::ColorEdit3("Albedo %d",
                         glm::value_ptr(m_Scene.Materials[i].Albedo));
       ImGui::DragFloat("Metallic %d", &m_Scene.Materials[i].Metallic, 0.05f,

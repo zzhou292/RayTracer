@@ -52,4 +52,5 @@ private:
   uint32_t m_FrameIndex = 1;
 
   Settings m_Settings;
+  std::vector<uint32_t> m_ImageHorizontalIter, m_ImageVerticalIter;
 };
