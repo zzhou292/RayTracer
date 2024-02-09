@@ -6673,7 +6673,8 @@ CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/Renderer.cpp.o: WalnutApp/src/Render
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
+  /opt/homebrew/Cellar/libomp/17.0.6/include/omp.h
 
 CMakeFiles/WalnutApp_exec.dir/WalnutApp/src/WalnutApp.cpp.o: WalnutApp/src/WalnutApp.cpp \
   Walnut/Walnut/src/Walnut/Application.h \
@@ -7695,6 +7696,8 @@ Walnut/Walnut/src/Walnut/Timer.h:
 Walnut/Walnut/src/Walnut/EntryPoint.h:
 
 WalnutApp/src/WalnutApp.cpp:
+
+/opt/homebrew/Cellar/libomp/17.0.6/include/omp.h:
 
 WalnutApp/src/Ray.h:
 

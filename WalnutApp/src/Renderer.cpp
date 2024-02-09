@@ -4,6 +4,7 @@
 #include <cmath>
 #include <execution>
 #include <iostream>
+#include <omp.h>
 
 namespace Utils {
 static uint32_t ConvertToRGBA(const glm::vec4 &color) {
@@ -81,7 +82,12 @@ void Renderer::Render(const Scene &scene, const Camera &camera) {
       });
 
 #else
+
   // render every pixel
+  omp_set_dynamic(0);
+  omp_set_num_threads(8);
+
+#pragma omp parallel for
   for (uint32_t y = 0; y < m_FinalImage->GetHeight(); y++) {
     for (uint32_t x = 0; x < m_FinalImage->GetWidth(); x++) {
       glm::vec4 color = PerPixel(x, y);
@@ -117,39 +123,31 @@ glm::vec4 Renderer::PerPixel(uint32_t x, uint32_t y) {
       m_ActiveCamera->GetRayDirections()[x + y * m_FinalImage->GetWidth()];
 
   int bounces = 5;
-  glm::vec3 color(0.0f);
-  float multiplier = 1.0f;
+  glm::vec3 light(0.0f);
+  glm::vec3 contribution = {1.0f, 1.0f, 1.0f};
 
   for (int i = 0; i < bounces; i++) {
     Renderer::HitPayload payload = TraceRay(ray);
     if (payload.HitDistance < 0.0f) {
       glm::vec3 skyColor = glm::vec3(0.6f, 0.7f, 0.9f);
-      color += skyColor * multiplier;
+      // light += skyColor * contribution;
       break;
     }
-
-    glm::vec3 lightDir = glm::normalize(glm::vec3(-1, -1, -1));
-
-    float d = glm::max(glm::dot(payload.WorldNormal, -lightDir), 0.0f);
 
     const Sphere &sphere = m_ActiveScene->Spheres[payload.ObjectIndex];
     const Material &material = m_ActiveScene->Materials[sphere.MaterialIndex];
 
     glm::vec3 sphereColor = material.Albedo;
-    sphereColor *= d;
+    light += material.GetEmission();
 
-    color += sphereColor * multiplier;
-
-    multiplier *= 0.5f;
+    contribution *= material.Albedo;
 
     ray.origin = payload.WorldPosition + payload.WorldNormal * 0.001f;
     ray.direction =
-        glm::reflect(ray.direction, payload.WorldNormal +
-                                        material.Roughness *
-                                            Walnut::Random::Vec3(-0.5f, 0.5f));
+        glm::normalize(Walnut::Random::InUnitSphere() + payload.WorldNormal);
   }
 
-  return glm::vec4(color, 1.0f);
+  return glm::vec4(light, 1.0f);
 }
 
 Renderer::HitPayload Renderer::TraceRay(const Ray &ray) {

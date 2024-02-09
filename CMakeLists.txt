@@ -11,6 +11,10 @@ link_directories(/opt/homebrew/Cellar/glfw/3.3.9/lib)
 include_directories(/Users/jasonzhou/VulkanSDK/1.3.275.0/macOS/include/)
 link_directories(/Users/jasonzhou/VulkanSDK/1.3.275.0/macOS/lib/)
 
+#omp
+include_directories(/opt/homebrew/Cellar/libomp/17.0.6/include)
+link_directories(/opt/homebrew/Cellar/libomp/17.0.6/lib)
+
 # ImGui
 include_directories(./Walnut/vendor/imgui)
 file(GLOB IMGUI_SOURCES ./Walnut/vendor/imgui/*.cpp ./Walnut/vendor/imgui/backends/imgui_impl_vulkan.h ./Walnut/vendor/imgui/backends/imgui_impl_vulkan.cpp ./Walnut/vendor/imgui/backends/imgui_impl_glfw.cpp ./Walnut/vendor/imgui/backends/imgui_impl_glfw.h)
@@ -19,6 +23,7 @@ file(GLOB IMGUI_SOURCES ./Walnut/vendor/imgui/*.cpp ./Walnut/vendor/imgui/backen
 # STB
 include_directories(./Walnut/vendor/stb_image)
 file(GLOB STB_SOURCES ./Walnut/vendor/stb_image/*.h)
+
 
 # Walnut
 include_directories(./Walnut/Walnut/src)
@@ -42,7 +47,9 @@ set(SOURCE_FILES
 set(librariesList
     GLFW
     vulkan
+    omp
 )
+
 
 add_executable(WalnutApp_exec ${SOURCE_FILES})
 target_link_libraries(WalnutApp_exec ${librariesList})
